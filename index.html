@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>PolarisImplants – Accès licences & CNC</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <style>
+
+    :root{
+
+      --bg:#0b1220;--card:#070c18;--text:#e5e7eb;--muted:#9ca3af;
+
+      --blue:#1d4ed8;--blue2:#2563eb;--radius:14px;
+
+    }
+
+    body{margin:0;font-family:system-ui;background:radial-gradient(1200px 600px at 50% 0%,#101a35 0%,var(--bg) 60%);color:var(--text);}
+
+    .marquee{background:#1d4ed8;color:#fff;overflow:hidden;white-space:nowrap;}
+
+    .marquee span{display:inline-block;padding:10px 0;font-weight:600;animation:marq 16s linear infinite;}
+
+    @keyframes marq{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+
+    .wrap{max-width:1200px;margin:auto;padding:24px 16px 40px;}
+
+    .hero{text-align:center;margin-bottom:24px;}
+
+    .hero h1{margin:0 0 6px;font-size:32px;}
+
+    .hero p{margin:0;color:#cbd5f5;}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+
+    @media(max-width:900px){.grid{grid-template-columns:1fr;}}
+
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:10px;}
+
+    .card h3{margin:0;font-size:18px;}
+
+    .card p,li{color:var(--muted);font-size:14.5px;}
+
+    ul{padding-left:18px;margin:6px 0;}
+
+    .btn{margin-top:auto;display:block;text-align:center;padding:12px;border-radius:999px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;}
+
+    .btn:hover{background:var(--blue2);}
+
+    .pdf{display:flex;gap:12px;align-items:center;margin-top:10px;text-decoration:none;color:#fff;border:1px dashed rgba(255,255,255,.2);padding:10px;border-radius:12px;}
+
+    .badge{width:42px;height:42px;border-radius:10px;background:#dc2626;display:flex;align-items:center;justify-content:center;font-weight:900;}
+
+    .footer{text-align:center;color:#777;font-size:12px;margin-top:30px;}
+
+    small{color:#cbd5f5;opacity:.8;}
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <div class="marquee">
+
+    <span>ℹ️ Impression 1:1 : dans Paramètres supplémentaires, sélectionner « Taille réelle » (100%).</span>
+
+  </div>
+
+
+
+  <div class="wrap">
+
+    <div class="hero">
+
+      <h1>Merci pour votre achat</h1>
+
+      <p><b>PolarisImplants — la validation par le réel</b></p>
+
+    </div>
+
+
+
+    <div class="grid">
+
+      <!-- 1 -->
+
+      <div class="card">
+
+        <h3>1. Générer votre licence</h3>
+
+        <p>Accédez au générateur officiel de licences PolarisImplants.</p>
+
+        <ul>
+
+          <li>Saisir nom, prénom, e-mail</li>
+
+          <li>Réception immédiate de la licence</li>
+
+        </ul>
+
+        <a class="btn" href="https://license.leguidechirurgical.com" target="_blank" rel="noopener">
+
+          Générateur de licences
+
+        </a>
+
+      </div>
+
+
+
+      <!-- 2 -->
+
+      <div class="card">
+
+        <h3>2. PolarisVision – CNC</h3>
+
+        <p>Mesure des points, calibration et génération du G-code.</p>
+
+        <ul>
+
+          <li>Calibration 4 points</li>
+
+          <li>Export PDF 1:1 / G-code</li>
+
+        </ul>
+
+        <a class="btn" href="https://polarisimplants.github.io/polarisvision/" target="_blank" rel="noopener">
+
+          Ouvrir PolarisVision
+
+        </a>
+
+      </div>
+
+
+
+      <!-- 3 -->
+
+      <div class="card">
+
+        <h3>Guide essentiel</h3>
+
+        <p>Document de synthèse pour le praticien.</p>
+
+
+
+        <a class="pdf" href="./Polaris_Synthese_Praticien.pdf" target="_blank" rel="noopener">
+
+          <div class="badge">PDF</div>
+
+          <div>
+
+            <b>Guide essentiel</b><br>
+
+            <small>PolarisImplants</small>
+
+          </div>
+
+        </a>
+
+
+
+        <p style="margin-top:10px;"><b>Besoin d’aide ?</b><br>
+
+          <a href="mailto:polarisimplants@gmail.com" style="color:#93c5fd;">polarisimplants@gmail.com</a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="footer">© <span id="year"></span> PolarisImplants</div>
+
+  </div>
+
+
+
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+
+</body>
+
+</html>
